@@ -1,6 +1,6 @@
 {
   "name": "enum-copy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -16,5 +16,9 @@
     "@types/yargs": "13.0.0",
     "typescript": "3.5.3",
     "yargs": "13.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jkbmat/enum-copy"
   }
 }
