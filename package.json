@@ -1,0 +1,20 @@
+{
+  "name": "enum-copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "rm -rf dist && tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jakub Matuska",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "12.6.8",
+    "@types/yargs": "13.0.0",
+    "typescript": "3.5.3",
+    "yargs": "13.3.0"
+  }
+}
