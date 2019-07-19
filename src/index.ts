@@ -44,7 +44,8 @@ function dealWithBuffer (buffer: string) {
 	
 	if (!argv.inject) {
 		fs.writeFileSync(argv.outputFile, buffer)
-		
+		console.log(`Successfully rewrote ${argv.outputFile}`)
+
 		return
 	}
 	
@@ -57,5 +58,6 @@ function dealWithBuffer (buffer: string) {
 	}
 	
 	fs.writeFileSync(argv.outputFile, outFile.replace(argv.injectString, buffer))
+	console.log(`Successfully injected into ${argv.outputFile}`)
 }
 
