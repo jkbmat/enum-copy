@@ -5,11 +5,15 @@
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
-    "compile": "rm -rf dist && tsc",
+    "compile": "npm run lint && rm -rf dist && tsc",
+    "refresh": "rm -rf node_modules && npm i",
+    "lint": "eslint src/**/*.ts",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Jakub Matuska",
   "license": "ISC",
@@ -22,5 +26,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jkbmat/enum-copy"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "1.12.0",
+    "@typescript-eslint/parser": "1.12.0",
+    "eslint": "6.0.1"
   }
 }
