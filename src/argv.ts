@@ -1,6 +1,5 @@
 import yargs from 'yargs'
-import {FILE_IGNORE_STRING, INJECT_STRING} from 'const'
-
+import {FILE_IGNORE_STRING, INJECT_STRING} from './const'
 
 export const argv = yargs
 	.option(

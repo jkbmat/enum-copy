@@ -1,4 +1,4 @@
-import {FILE_IGNORE_STRING} from 'const'
+import {FILE_IGNORE_STRING} from './const'
 
 
 export function read(file: string) {

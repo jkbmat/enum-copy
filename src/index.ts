@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import fs from 'fs'
-import {argv} from 'argv'
-import {read} from 'read'
+import {argv} from './argv'
+import {read} from './read'
 
 
 let writeBuffer = ''
